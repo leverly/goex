@@ -28,7 +28,7 @@ func SetDefaultHttpCli(cli httpcli.IHttpClient) {
 }
 
 func main() {
-	logger.SetLevel(logger.DEBUG)
+	logger.SetLevel(logger.INFO)
 	DefaultHttpCli.SetTimeout(5)
 	_, _, err := OKx.Spot.GetExchangeInfo()
 	if err != nil {
