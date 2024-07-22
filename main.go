@@ -43,9 +43,9 @@ func main() {
 	}
 
 	okxPrvApi := OKx.Spot.NewPrvApi(
-		options.WithApiKey("c666e0ae-3dab-4c25-9e93-43c50ffae965"),
-		options.WithApiSecretKey("C91015FB76FF2EAEE73F2EE7F25BCC8B"),
-		options.WithPassphrase("Passokx@0206"))
+		options.WithApiKey(""),
+		options.WithApiSecretKey(""),
+		options.WithPassphrase(""))
 
 	list, _, err := okxPrvApi.GetKline(btcUSDTCurrencyPair, model.Kline_5min)
 	if err != nil {
